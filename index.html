@@ -1,586 +1,553 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Tableau Bootstrap</title>
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-
-  <style>
-    /* Bordure par défaut pour toutes les cellules */
-    table td, table th {
-      border: 1px solid #24242436 !important;
-    }
-
-    /* Supprimer la bordure si cellule vide */
-    table td:empty, table th:empty {
-      border: none !important;
-    }
-  </style>
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
 </head>
 <body class="px-4">
-   <div class=" d-flex">
-
-        <div class="container">
-                <div class="d-flex container">
-                <div class="container mt-4">
-                    <h2>Effectif des bénéficiaires</h2>
-                    <table class="table text-center">
-                    <thead>
-                        <tr>
-                        <th></th>
-                        <th class="table-primary">Adhérents</th>
-                        <th class="table-primary">Conjoints</th>
-                        <th class="table-primary">Enfants</th>
-                        <th></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                        <th>Masculin</th>
-                        <td>10</td>
-                        <td>21</td>
-                        <td>47</td>
-                        <td>78</td>
-                        </tr>
-                        <tr>
-                        <th>Féminin</th>
-                        <td>21</td>
-                        <td>10</td>
-                        <td>78</td>
-                        <td>109</td>
-                        </tr>
-                        <tr>
-                        <th></th>
-                        <td>31</td>
-                        <td>31</td>
-                        <td>125</td>
-                        <td></td>
-                        </tr>
-                    </tbody>
-                    </table>
-                </div>
-                <div class="container mt-4">
-                    <h2>Age des bénéficiaires</h2>
-                    <table class="table text-center">
-                    <thead>
-                        <tr>
-                        <th></th>
-                        <th class="table-primary">Adhérents</th>
-                        <th class="table-primary">Conjoints</th>
-                        <th class="table-primary">Enfants</th>
-                        
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                        <th>Age Max</th>
-                        <td>47</td>
-                        <td>43</td>
-                        <td>35</td>
-                        </tr>
-                        <tr>
-                        <th>Age Min</th>
-                        <td>52</td>
-                        <td>26</td>
-                        <td>32</td>
-                        </tr>
-                        <tr>
-                        <th>Age Moyen</th>
-                        <td>26</td>
-                        <td>0</td>
-                        <td>13</td>
-                        <td></td>
-                        </tr>
-                    </tbody>
-                    </table>
-                </div>
-                </div>
-
-                <div class="container mt-4">
-            <h2>Consommations par bons </h2>
-            <table class="table text-center">
-            <thead>
-                <tr>
-                <th class="table-primary">N° de bons</th>
-                <th class="table-primary">Nbre actes</th>
-                <th class="table-primary"> Cout Total</th>
-                <th class="table-primary">Part Mutuelle</th>
-                
-                
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                <th>63</th>
-                <td>47</td>
-                <td>43</td>
-                <td>35</td>
-                
-                </tr>
-                <tr>
-                <th>63</th>
-                <td>52</td>
-                <td>26</td>
-                <td>32</td>
-                
-                </tr>
-                <tr>
-                <th>63</th>
-                <td>26</td>
-                <td>0</td>
-                <td>13</td>
-                
-                </tr>
-                <tr>
-                    <th>63</th>
+  <div class="">
+    <div class="container-fluid d-flex gap-4">
+      <div class="container-fluid p-0">
+        <div class="d-flex">
+          <div class="container mt-4">
+            <h2>Effectif des bénéficiaires</h2>
+            <div class="table-responsive">
+              <table class="table text-center table-bordered">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th class="table-primary">Adhérents</th>
+                    <th class="table-primary">Conjoints</th>
+                    <th class="table-primary">Enfants</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>Masculin</th>
+                    <td>10</td>
+                    <td>21</td>
+                    <td>47</td>
+                    <td>78</td>
+                  </tr>
+                  <tr>
+                    <th>Féminin</th>
+                    <td>21</td>
+                    <td>10</td>
+                    <td>78</td>
+                    <td>109</td>
+                  </tr>
+                  <tr>
+                    <th></th>
+                    <td>31</td>
+                    <td>31</td>
+                    <td>125</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="container mt-4">
+            <h2>Âge des bénéficiaires</h2>
+            <div class="table-responsive">
+              <table class="table text-center table-bordered">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th class="table-primary">Adhérents</th>
+                    <th class="table-primary">Conjoints</th>
+                    <th class="table-primary">Enfants</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>Age Max</th>
+                    <td>47</td>
+                    <td>43</td>
+                    <td>35</td>
+                  </tr>
+                  <tr>
+                    <th>Age Min</th>
+                    <td>52</td>
+                    <td>26</td>
+                    <td>32</td>
+                  </tr>
+                  <tr>
+                    <th>Age Moyen</th>
                     <td>26</td>
                     <td>0</td>
                     <td>13</td>
-                
-                </tr>
-                <tr>
-                    <th>63</th>
-                    <td>26</td>
-                    <td>0</td>
-                    <td>13</td>
-                
-                </tr>
-                <tr>
-                    <th>63</th>
-                    <td>26</td>
-                    <td>0</td>
-                    <td>13</td>
-                </tr>
-                <tr>
-                    <th>63</th>
-                    <td>26</td>
-                    <td>0</td>
-                    <td>13</td>
-                
-                </tr>
-                <tr>
-                    <th>63</th>
-                    <td>26</td>
-                    <td>0</td>
-                    <td>13</td>
-                
-                </tr>
-                <tr>
-                    <th>63</th>
-                    <td>26</td>
-                    <td>0</td>
-                    <td>13</td>
-                
-                </tr>
-                <tr>
-                    <th>63</th>
-                    <td>26</td>
-                    <td>0</td>
-                    <td>13</td>
-                </tr>
-
-                
-                <tr>
-                <th></th>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                
-                </tr>
-            </tbody>
-            </table>
-                </div>
-
-                <div class="container mt-4">
-            <h2>Consommations par individu</h2>
-            <table class="table text-center">
-            <thead>
-                <tr>
-                <th class="table-primary">Bene_ID</th>
-                <th class="table-primary">Nom & Prénoms</th>
-                <th class="table-primary">Nbre bons</th>
-                <th class="table-primary"> Nbre actes</th>
-                <th class="table-primary">Cout total</th>
-                <th class="table-primary">Part mutuelle</th>
-                
-                
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                <th>63</th>
-                <td>47</td>
-                <td>43</td>
-                <td>35</td>
-                <td>35</td>
-                <td>35</td>
-                
-                </tr>
-                <tr>
-                <th>63</th>
-                <td>52</td>
-                <td>26</td>
-                <td>32</td>
-                <td>32</td>
-                <td>32</td>
-                
-                </tr>
-                <tr>
-                <th>63</th>
-                <td>26</td>
-                <td>0</td>
-                <td>13</td>
-                <td>13</td>
-                <td>13</td>
-                
-                </tr>
-                <tr>
-                    <th>63</th>
-                    <td>26</td>
-                    <td>0</td>
-                    <td>13</td>
-                    <td>13</td>
-                    <td>13</td>          
-                </tr>
-                <tr>
-                    <th>63</th>
-                    <td>26</td>
-                    <td>0</td>
-                    <td>13</td>
-                    <td>13</td>
-                    <td>13</td>          
-                </tr>
-                <tr>
-                    <th>63</th>
-                    <td>26</td>
-                    <td>0</td>
-                    <td>13</td>
-                    <td>13</td>
-                    <td>13</td>          
-                </tr>
-                <tr>
-                    <th>63</th>
-                    <td>26</td>
-                    <td>0</td>
-                    <td>13</td>
-                    <td>13</td>
-                    <td>13</td>
-                
-                </tr>
-                <tr>
-                    <th>63</th>
-                    <td>26</td>
-                    <td>0</td>
-                    <td>13</td>
-                    <td>13</td>
-                    <td>13</td>          
-                </tr>
-                <tr>
-                    <th>63</th>
-                    <td>26</td>
-                    <td>0</td>
-                    <td>13</td>
-                    <td>13</td>
-                    <td>13</td>          
-                </tr>
-                <tr>
-                    <th>63</th>
-                    <td>26</td>
-                    <td>0</td>
-                    <td>13</td>
-                    <td>13</td>
-                    <td>13</td>          
-                </tr>
-
-                
-                <tr>
-                <th></th>
-                <td></td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>          
-                </tr>
-            </tbody>
-            </table>
-                </div>
-
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
         </div>
-        <div class="vr"></div>
-        <div class="container">
-                <div class=" mt-4">
-                <h2>Consommations par famille</h2>
-                <table class="table text-center">
-                <thead>
-                    <tr>
-                    <th class="table-primary">Bene_ID</th>
-                    <th class="table-primary">Nom & Prénoms</th>
-                    <th class="table-primary">Nbre bons</th>
-                    <th class="table-primary"> Nbre actes</th>
-                    <th class="table-primary">Cout total</th>
-                    <th class="table-primary">Part mutuelle</th>
-                    
-                    
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                    <th>63</th>
-                    <td>47</td>
-                    <td>43</td>
-                    <td>35</td>
-                    <td>35</td>
-                    <td>35</td>
-                    
-                    </tr>
-                    <tr>
-                    <th>63</th>
-                    <td>52</td>
-                    <td>26</td>
-                    <td>32</td>
-                    <td>32</td>
-                    <td>32</td>
-                    
-                    </tr>
-                    <tr>
-                    <th>63</th>
-                    <td>26</td>
-                    <td>0</td>
-                    <td>13</td>
-                    <td>13</td>
-                    <td>13</td>
-                    
-                    </tr>
-                    <tr>
-                        <th>63</th>
-                        <td>26</td>
-                        <td>0</td>
-                        <td>13</td>
-                        <td>13</td>
-                        <td>13</td>          
-                    </tr>
-                    <tr>
-                        <th>63</th>
-                        <td>26</td>
-                        <td>0</td>
-                        <td>13</td>
-                        <td>13</td>
-                        <td>13</td>          
-                    </tr>
-                    <tr>
-                        <th>63</th>
-                        <td>26</td>
-                        <td>0</td>
-                        <td>13</td>
-                        <td>13</td>
-                        <td>13</td>          
-                    </tr>
-                    <tr>
-                        <th>63</th>
-                        <td>26</td>
-                        <td>0</td>
-                        <td>13</td>
-                        <td>13</td>
-                        <td>13</td>
-                    
-                    </tr>
-                    <tr>
-                        <th>63</th>
-                        <td>26</td>
-                        <td>0</td>
-                        <td>13</td>
-                        <td>13</td>
-                        <td>13</td>          
-                    </tr>
-                    <tr>
-                        <th>63</th>
-                        <td>26</td>
-                        <td>0</td>
-                        <td>13</td>
-                        <td>13</td>
-                        <td>13</td>          
-                    </tr>
-                    <tr>
-                        <th>63</th>
-                        <td>26</td>
-                        <td>0</td>
-                        <td>13</td>
-                        <td>13</td>
-                        <td>13</td>          
-                    </tr>
-            
-                    
-                    <tr>
-                    <th></th>
-                    <td></td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>          
-                    </tr>
-                </tbody>
-                </table>
-            </div>
-            <div class="container mt-4">
-                <h2>Reseaux des soins</h2>
-                <table class="table text-center">
-                <thead>
-                    <tr>
-                    <th class="table-primary">Code </th>
-                    <th class="table-primary">Prestataire</th>
-                    <th class="table-primary">Statut</th>
-                    <th class="table-primary">Nbre de bons</th>
-                    <th class="table-primary">Total</th>
-                    <th class="table-primary">Part Mutuelle</th>
-                    
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                    <th>63</th>
-                    <td>47</td>
-                    <td>43</td>
-                    <td>35</td>
-                    <td>35</td>
-                    <td>35</td>
-                    
-                    </tr>
-                    <tr>
-                    <th>63</th>
-                    <td>52</td>
-                    <td>26</td>
-                    <td>32</td>
-                    <td>32</td>
-                    <td>32</td>
-                    </tr>
-                    <tr>
-                    <th>63</th>
-                    <td>26</td>
-                    <td>0</td>
-                    <td>13</td>
-                    <td>13</td>
-                    <td>13</td>
-                    </tr>
-                    <tr>
-                        <th>63</th>
-                        <td>26</td>
-                        <td>0</td>
-                        <td>13</td>
-                        <td>13</td>
-                        <td>13</td>
-                    </tr>
-                    <tr>
-                        <th>63</th>
-                        <td>26</td>
-                        <td>0</td>
-                        <td>13</td>
-                        <td>13</td>
-                        <td>13</td>
-                    </tr>
-                    <tr>
-                        <th>63</th>
-                        <td>26</td>
-                        <td>0</td>
-                        <td>13</td>
-                        <td>13</td>
-                        <td>13</td>
-                    </tr>
-                    <tr>
-                        <th>63</th>
-                        <td>26</td>
-                        <td>0</td>
-                        <td>13</td>
-                        <td>13</td>
-                        <td>13</td>
-                    </tr>
-                    <tr>
-                        <th>63</th>
-                        <td>26</td>
-                        <td>0</td>
-                        <td>13</td>
-                        <td>13</td>
-                        <td>13</td>
-                    </tr>
-                    <tr>
-                        <th>63</th>
-                        <td>26</td>
-                        <td>0</td>
-                        <td>13</td>
-                        <td>13</td>
-                        <td>13</td>
-                    </tr>
-                    <tr>
-                        <th>63</th>
-                        <td>26</td>
-                        <td>0</td>
-                        <td>13</td>
-                        <td>13</td>
-                        <td>13</td>
-                    </tr>
-            
-                    
-                    <tr>
-                    <th></th>
-                    <td></td>
-                    <td></td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    </tr>
-                </tbody>
-                </table>
-            </div>
-            <div class="container mt-4">
-                <h2>Consommations par categorie de beneficiaires</h2>
-                <table class="table text-center">
-                <thead>
-                    <tr>
-                    <th class="table-primary"></th>
-                    <th class="table-primary">Nbre de bons</th>
-                    <th class="table-primary">Cout total</th>
-                    <th class="table-primary">Part mutuelle</th>
-                    <th class="table-primary">Cout  moyen </th>
-                    
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                    <th>Adhérents</th>
-                    <td>47</td>
-                    <td>43</td>
-                    <td>35</td>
-                    <td>35</td>
-                    </tr>
-                    <tr>
-                    <th>Conjoints</th>
-                    <td>52</td>
-                    <td>26</td>
-                    <td>32</td>
-                    <td>32</td>
-                    </tr>
-                    <tr>
-                    <th>Enfants</th>
-                    <td>26</td>
-                    <td>0</td>
-                    <td>13</td>
-                    <td>13</td>
-                    </tr>
-                    <tr>
-                    <th></th>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td></td>
-                    </tr>
-                </tbody>
-                </table>
-            </div>
-            
+        <div class="container mt-4">
+          <h2>Consommations par bons</h2>
+          <div class="table-responsive">
+            <table class="table text-center table-bordered">
+              <thead>
+                <tr>
+                  <th class="table-primary">N° de bons</th>
+                  <th class="table-primary">Nbre actes</th>
+                  <th class="table-primary">Cout Total</th>
+                  <th class="table-primary">Part Mutuelle</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>63</th>
+                  <td>47</td>
+                  <td>43</td>
+                  <td>35</td>
+                </tr>
+                <tr>
+                  <th>63</th>
+                  <td>52</td>
+                  <td>26</td>
+                  <td>32</td>
+                </tr>
+                <tr>
+                  <th>63</th>
+                  <td>26</td>
+                  <td>0</td>
+                  <td>13</td>
+                </tr>
+                <tr>
+                  <th>63</th>
+                  <td>26</td>
+                  <td>0</td>
+                  <td>13</td>
+                </tr>
+                <tr>
+                  <th>63</th>
+                  <td>26</td>
+                  <td>0</td>
+                  <td>13</td>
+                </tr>
+                <tr>
+                  <th>63</th>
+                  <td>26</td>
+                  <td>0</td>
+                  <td>13</td>
+                </tr>
+                <tr>
+                  <th>63</th>
+                  <td>26</td>
+                  <td>0</td>
+                  <td>13</td>
+                </tr>
+                <tr>
+                  <th>63</th>
+                  <td>26</td>
+                  <td>0</td>
+                  <td>13</td>
+                </tr>
+                <tr>
+                  <th>63</th>
+                  <td>26</td>
+                  <td>0</td>
+                  <td>13</td>
+                </tr>
+                <tr>
+                  <th>63</th>
+                  <td>26</td>
+                  <td>0</td>
+                  <td>13</td>
+                </tr>
+                <tr>
+                  <th></th>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
-   </div>
- 
- <script src="js/bootstrap.min.js"></script>
+        <div class="container mt-4">
+          <h2>Consommations par individu</h2>
+          <div class="table-responsive">
+            <table class="table text-center table-bordered">
+              <thead>
+                <tr>
+                  <th class="table-primary">Bene_ID</th>
+                  <th class="table-primary">Nom & Prénoms</th>
+                  <th class="table-primary">Nbre bons</th>
+                  <th class="table-primary">Nbre actes</th>
+                  <th class="table-primary">Cout total</th>
+                  <th class="table-primary">Part mutuelle</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>63</th>
+                  <td>47</td>
+                  <td>43</td>
+                  <td>35</td>
+                  <td>35</td>
+                  <td>35</td>
+                </tr>
+                <tr>
+                  <th>63</th>
+                  <td>52</td>
+                  <td>26</td>
+                  <td>32</td>
+                  <td>32</td>
+                  <td>32</td>
+                </tr>
+                <tr>
+                  <th>63</th>
+                  <td>26</td>
+                  <td>0</td>
+                  <td>13</td>
+                  <td>13</td>
+                  <td>13</td>
+                </tr>
+                <tr>
+                  <th>63</th>
+                  <td>26</td>
+                  <td>0</td>
+                  <td>13</td>
+                  <td>13</td>
+                  <td>13</td>
+                </tr>
+                <tr>
+                  <th>63</th>
+                  <td>26</td>
+                  <td>0</td>
+                  <td>13</td>
+                  <td>13</td>
+                  <td>13</td>
+                </tr>
+                <tr>
+                  <th>63</th>
+                  <td>26</td>
+                  <td>0</td>
+                  <td>13</td>
+                  <td>13</td>
+                  <td>13</td>
+                </tr>
+                <tr>
+                  <th>63</th>
+                  <td>26</td>
+                  <td>0</td>
+                  <td>13</td>
+                  <td>13</td>
+                  <td>13</td>
+                </tr>
+                <tr>
+                  <th>63</th>
+                  <td>26</td>
+                  <td>0</td>
+                  <td>13</td>
+                  <td>13</td>
+                  <td>13</td>
+                </tr>
+                <tr>
+                  <th>63</th>
+                  <td>26</td>
+                  <td>0</td>
+                  <td>13</td>
+                  <td>13</td>
+                  <td>13</td>
+                </tr>
+                <tr>
+                  <th>63</th>
+                  <td>26</td>
+                  <td>0</td>
+                  <td>13</td>
+                  <td>13</td>
+                  <td>13</td>
+                </tr>
+                <tr>
+                  <th></th>
+                  <td></td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="vr "></div>
+
+      <div class="container-fluid p-0">
+        <div class="mt-4">
+          <h2>Consommations par famille</h2>
+          <div class="table-responsive">
+            <table class="table text-center table-bordered">
+              <thead>
+                <tr>
+                  <th class="table-primary">Bene_ID</th>
+                  <th class="table-primary">Nom & Prénoms</th>
+                  <th class="table-primary">Nbre bons</th>
+                  <th class="table-primary">Nbre actes</th>
+                  <th class="table-primary">Cout total</th>
+                  <th class="table-primary">Part mutuelle</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>63</th>
+                  <td>47</td>
+                  <td>43</td>
+                  <td>35</td>
+                  <td>35</td>
+                  <td>35</td>
+                </tr>
+                <tr>
+                  <th>63</th>
+                  <td>52</td>
+                  <td>26</td>
+                  <td>32</td>
+                  <td>32</td>
+                  <td>32</td>
+                </tr>
+                <tr>
+                  <th>63</th>
+                  <td>26</td>
+                  <td>0</td>
+                  <td>13</td>
+                  <td>13</td>
+                  <td>13</td>
+                </tr>
+                <tr>
+                  <th>63</th>
+                  <td>26</td>
+                  <td>0</td>
+                  <td>13</td>
+                  <td>13</td>
+                  <td>13</td>
+                </tr>
+                <tr>
+                  <th>63</th>
+                  <td>26</td>
+                  <td>0</td>
+                  <td>13</td>
+                  <td>13</td>
+                  <td>13</td>
+                </tr>
+                <tr>
+                  <th>63</th>
+                  <td>26</td>
+                  <td>0</td>
+                  <td>13</td>
+                  <td>13</td>
+                  <td>13</td>
+                </tr>
+                <tr>
+                  <th>63</th>
+                  <td>26</td>
+                  <td>0</td>
+                  <td>13</td>
+                  <td>13</td>
+                  <td>13</td>
+                </tr>
+                <tr>
+                  <th>63</th>
+                  <td>26</td>
+                  <td>0</td>
+                  <td>13</td>
+                  <td>13</td>
+                  <td>13</td>
+                </tr>
+                <tr>
+                  <th>63</th>
+                  <td>26</td>
+                  <td>0</td>
+                  <td>13</td>
+                  <td>13</td>
+                  <td>13</td>
+                </tr>
+                <tr>
+                  <th>63</th>
+                  <td>26</td>
+                  <td>0</td>
+                  <td>13</td>
+                  <td>13</td>
+                  <td>13</td>
+                </tr>
+                <tr>
+                  <th></th>
+                  <td></td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="container mt-4">
+          <h2>Réseaux des soins</h2>
+          <div class="table-responsive">
+            <table class="table text-center table-bordered">
+              <thead>
+                <tr>
+                  <th class="table-primary">Code</th>
+                  <th class="table-primary">Prestataire</th>
+                  <th class="table-primary">Statut</th>
+                  <th class="table-primary">Nbre de bons</th>
+                  <th class="table-primary">Total</th>
+                  <th class="table-primary">Part Mutuelle</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>63</th>
+                  <td>47</td>
+                  <td>43</td>
+                  <td>35</td>
+                  <td>35</td>
+                  <td>35</td>
+                </tr>
+                <tr>
+                  <th>63</th>
+                  <td>52</td>
+                  <td>26</td>
+                  <td>32</td>
+                  <td>32</td>
+                  <td>32</td>
+                </tr>
+                <tr>
+                  <th>63</th>
+                  <td>26</td>
+                  <td>0</td>
+                  <td>13</td>
+                  <td>13</td>
+                  <td>13</td>
+                </tr>
+                <tr>
+                  <th>63</th>
+                  <td>26</td>
+                  <td>0</td>
+                  <td>13</td>
+                  <td>13</td>
+                  <td>13</td>
+                </tr>
+                <tr>
+                  <th>63</th>
+                  <td>26</td>
+                  <td>0</td>
+                  <td>13</td>
+                  <td>13</td>
+                  <td>13</td>
+                </tr>
+                <tr>
+                  <th>63</th>
+                  <td>26</td>
+                  <td>0</td>
+                  <td>13</td>
+                  <td>13</td>
+                  <td>13</td>
+                </tr>
+                <tr>
+                  <th>63</th>
+                  <td>26</td>
+                  <td>0</td>
+                  <td>13</td>
+                  <td>13</td>
+                  <td>13</td>
+                </tr>
+                <tr>
+                  <th>63</th>
+                  <td>26</td>
+                  <td>0</td>
+                  <td>13</td>
+                  <td>13</td>
+                  <td>13</td>
+                </tr>
+                <tr>
+                  <th>63</th>
+                  <td>26</td>
+                  <td>0</td>
+                  <td>13</td>
+                  <td>13</td>
+                  <td>13</td>
+                </tr>
+                <tr>
+                  <th>63</th>
+                  <td>26</td>
+                  <td>0</td>
+                  <td>13</td>
+                  <td>13</td>
+                  <td>13</td>
+                </tr>
+                <tr>
+                  <th></th>
+                  <td></td>
+                  <td></td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="container mt-4">
+          <h2>Consommations par catégorie de bénéficiaires</h2>
+          <div class="table-responsive">
+            <table class="table text-center table-bordered">
+              <thead>
+                <tr>
+                  <th class="table-primary"></th>
+                  <th class="table-primary">Nbre de bons</th>
+                  <th class="table-primary">Cout total</th>
+                  <th class="table-primary">Part mutuelle</th>
+                  <th class="table-primary">Cout moyen</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>Adhérents</th>
+                  <td>47</td>
+                  <td>43</td>
+                  <td>35</td>
+                  <td>35</td>
+                </tr>
+                <tr>
+                  <th>Conjoints</th>
+                  <td>52</td>
+                  <td>26</td>
+                  <td>32</td>
+                  <td>32</td>
+                </tr>
+                <tr>
+                  <th>Enfants</th>
+                  <td>26</td>
+                  <td>0</td>
+                  <td>13</td>
+                  <td>13</td>
+                </tr>
+                <tr>
+                  <th></th>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
