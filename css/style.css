@@ -12,8 +12,9 @@
       min-width: 100%;
       width: max-content;
       margin-bottom: 0;
-      border-collapse: separate;
-      border-spacing: 0;
+      border-collapse: collapse;
+     border-top: transparent;   /* supprime la bordure en haut du tableau */
+     border-bottom: transparent;/* supprime la bordure en bas du tableau */
     }
     
     /* Style pour les en-têtes de tableau */
@@ -25,12 +26,14 @@
       padding: 0.5rem;
     }
     
+    
     /* Style pour les cellules */
     .table td, .table th {
       padding: 0.5rem;
       vertical-align: middle;
       border: 1px solid #dee2e6;
       min-width: 80px;
+      
     }
 
     /* Style pour les cellules vides */
@@ -43,7 +46,7 @@
     h2 {
       font-size: 1.25rem;
       margin-bottom: 1rem;
-      color: #0d6efd;
+      color: #01030673;
       white-space: nowrap;
     }
     
@@ -74,13 +77,7 @@
       }
     }
     
-    /* Style pour la séparation verticale */
-    .vr {
-      width: 1px;
-      background-color: #dee2e6;
-      margin: 1rem 0;
-      display: none; /* Caché sur mobile */
-    }
+  
     
     @media (min-width: 992px) {
       .vr {
@@ -88,15 +85,33 @@
       }
     }
     
-    /* Style pour les lignes vides en bas des tableaux */
+    /* Style pour les lignes vides en bas des tableaux
     .table tbody tr:last-child {
-      border-top: 2px solid #dee2e6;
+      border-top: 1px solid #dee2e6;
     }
-    
+     */
     /* Style pour les tableaux côte à côte sur desktop */
     @media (min-width: 768px) {
       .d-flex.container > .container {
         flex: 1;
         padding: 0 0.5rem;
       }
+    }
+
+    /* Style personnalisé pour les éléments select */
+    .form-select {
+      border: 1px solid #ced4da !important;
+      box-shadow: none !important;
+      background-color: #fff !important;
+      background-image: none !important;
+    }
+    
+    .form-select:focus {
+      border-color: none;
+    }
+    
+    .form-select-sm {
+      padding: 0.25rem 0.5rem !important;
+      font-size: 0.875rem !important;
+      border-radius: 0.2rem !important;
     }
