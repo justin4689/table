@@ -24,6 +24,8 @@
       background-color: #f8f9fa !important;
       border: 1px solid #dee2e6;
       padding: 0.5rem;
+
+      
     }
     
     
@@ -33,7 +35,12 @@
       vertical-align: middle;
       border: 1px solid #dee2e6;
       min-width: 80px;
+
       
+    }
+
+    .table th {
+      color: #01030673 !important;
     }
 
     /* Style pour les cellules vides */
